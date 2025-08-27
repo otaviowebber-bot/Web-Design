@@ -11,3 +11,4 @@ document.getElementById("Botao").onclick = () => {
     }
     toast.textContent = `Você clicou ${contador}`;
     toast.classList.add("show");
+};
