@@ -1,19 +1,156 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #06cc21;
+   
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 50px;
 }
 
-button {
-    padding: 15px 25px;
-    background-color: #a5150b;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #004080;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+
+.banner {
+    /* Melhoria de UI/Design: Banner com imagem de fundo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner h2 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+main {
+    padding: 40px 0;
+}
+
+section {
+    background: white;
+    margin: 0 auto 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    color: #003366;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #003366;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #004080;
+    color: white;
+    padding: 12px 20px;
     border: none;
-    color: rgb(228, 206, 11);
-    font-size: 22px;
-    border-radius: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #4f0b77;
+form input[type="submit"]:hover {
+    background-color: #0059b3;
 }
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-links, .social-media {
+    margin: 20px 0;
+}
+
+.footer-links a, .social-media a {
+    color: #ffc107;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a {
+    font-size: 1.5em;
+}
+
+/* Melhoria de UI/Design: Design Responsivo */
+@media (max-width: 768px) {
+    header h1 { font-size: 2em; }
+    .banner { height: 300px; }
+    .banner h2 { font-size: 2.2em; }
+    nav a { display: block; margin: 10px 0; }
+}
+
