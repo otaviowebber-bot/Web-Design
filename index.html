@@ -1,16 +1,137 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <title>Faculdade Exemplo - Cursos de Graduação e Ensino Superior</title>
     <meta charset="UTF-8">
-    <title>primeira experiencia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a Faculdade Exemplo, sua melhor opção em ensino superior. Oferecemos cursos de graduação de excelência para uma formação profissional completa.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="https://preview.redd.it/urubu-do-pix-em-4k-v0-3lbmq6c9hnxa1.jpg?width=320&crop=smart&auto=webp&s=fc7c79ee16fab784c2c83b9493d681eae6caa4c4" alt="imagem do urubu do pix"  width="400">
-    <h1>manda o pix </h1>
-    <button id="Botao">pix</button>
-    <script src="script.js"></script>
+
+<header>
+    <div class="container">
+        <h1>Faculdade Exemplo</h1>
+        <p>Transformando conhecimento em futuro através do ensino superior de qualidade.</p>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <a href="index.html" title="Página inicial da Faculdade Exemplo">Início</a>
+        <a href="cursos.html" title="Conheça nossos cursos de graduação">Cursos</a>
+        <a href="sobre.html" title="Saiba mais sobre nossa história e missão">Sobre</a>
+        <a href="contato.html" title="Entre em contato conosco">Contato</a>
+    </div>
+</nav>
+
+<div class="banner">
+    <h2>Bem-vindo à Melhor Experiência em Educação</h2>
+</div>
+
+<main class="container">
+    <section id="sobre">
+        <h2>Quem Somos</h2>
+        <p>A Faculdade Exemplo é uma renomada <strong>instituição de ensino superior</strong>, dedicada à formação de profissionais preparados para os desafios do mercado. Nossa missão é oferecer <strong>cursos de graduação de excelência</strong>, combinando teoria e prática para uma <strong>formação acadêmica e profissional</strong> completa.</p>
+    </section>
+
+    <section id="cursos">
+        <h2>Nossos Cursos de Graduação</h2>
+        <ul>
+            <li><a href="cursos/administracao.html">Administração</a></li>
+            <li><a href="cursos/ciencia-da-computacao.html">Ciência da Computação</a></li>
+            <li><a href="cursos/direito.html">Direito</a></li>
+            <li><a href="cursos/engenharia-civil.html">Engenharia Civil</a></li>
+            <li><a href="cursos/medicina.html">Medicina</a></li>
+        </ul>
+    </section>
+
+    <section id="infraestrutura">
+        <h2>Infraestrutura de Ponta</h2>
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop" alt="Foto do campus da Faculdade Exemplo com prédios modernos e área verde">
+        <p>Nosso campus conta com biblioteca completa, laboratórios modernos equipados com a mais alta tecnologia e áreas de convivência que promovem a integração entre os alunos.</p>
+    </section>
+
+    <section id="corpo-docente">
+        <h2>Corpo Docente Qualificado</h2>
+        <p>Contamos com professores altamente qualificados, sendo a maioria mestres e doutores com vasta experiência acadêmica e de mercado. Nossos pesquisadores são renomados e atuam como especialistas em áreas como <strong>Direito, Engenharia e Tecnologia</strong>, trazendo conhecimento prático e inovador para a sala de aula.</p>
+    </section>
+
+    <section id="noticias">
+        <h2>Notícias Recentes</h2>
+        <div itemscope itemtype="https://schema.org/NewsArticle">
+            <article>
+                <h3 itemprop="headline">Semana Acadêmica 2025</h3>
+                <p itemprop="articleBody">A Faculdade Exemplo realizou sua tradicional Semana Acadêmica com palestras e workshops que conectaram alunos e profissionais renomados do mercado.</p>
+            </article>
+        </div>
+        <div itemscope itemtype="https://schema.org/NewsArticle">
+            <article>
+                <h3 itemprop="headline">Parceria Internacional</h3>
+                <p itemprop="articleBody">Firmamos um novo acordo com universidades europeias para ampliar as oportunidades de intercâmbio para nossos alunos de graduação.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <h2>O que nossos alunos dizem</h2>
+        <div itemprop="review" itemscope itemtype="https://schema.org/Review">
+            <blockquote itemprop="reviewBody">
+                <p>"A Faculdade Exemplo mudou minha vida. Hoje atuo em uma grande empresa graças à formação sólida e completa que recebi."</p>
+                <footer>- <span itemprop="author">João Silva, Ex-Aluno</span></footer>
+            </blockquote>
+            <meta itemprop="reviewRating" content="5">
+        </div>
+        <div itemprop="review" itemscope itemtype="https://schema.org/Review">
+            <blockquote itemprop="reviewBody">
+                <p>"Professores qualificados e ótima estrutura. Recomendo a todos que buscam uma instituição de ensino superior séria e comprometida."</p>
+                <footer>- <span itemprop="author">Maria Souza, Aluna</span></footer>
+            </blockquote>
+            <meta itemprop="reviewRating" content="5">
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <form action="obrigado.html" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            
+            <input type="submit" value="Enviar Mensagem">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Faculdade Exemplo - Todos os direitos reservados</p>
+        <p>Endereço: Rua da Educação, 123 - Cidade Exemplo, BR</p>
+        <p>Telefone: (00) 1234-5678</p>
+        
+        <div class="footer-links">
+            <a href="/mapa-do-site.html">Mapa do Site</a> |
+            <a href="/politica-de-privacidade.html">Política de Privacidade</a>
+        </div>
+        <div class="social-media">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
